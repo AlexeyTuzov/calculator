@@ -1,4 +1,5 @@
 import React, {FC} from "react";
+import {Link} from "react-router-dom";
 
 const Card: FC = () => {
     return (
@@ -14,8 +15,12 @@ const Card: FC = () => {
                         </p>
                     </div>
                     <div className='card-action'>
-                        <a className='s6' title='converter'>Link 1</a>
-                        <a className='s6' title='courses'>Link 2</a>
+                        <Link to='/converter' title='converter'>
+                            Converter
+                        </Link>
+                        <Link to='/courses' title='courses'>
+                            Courses
+                        </Link>
                     </div>
                 </div>
             </div>

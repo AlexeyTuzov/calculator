@@ -12,7 +12,4 @@ describe('Footer test', () => {
    it('React Logo presents', () => {
       expect(screen.getByTitle('Logo')).toBeInTheDocument();
    });
-   it('Rendered Logo, not Alt text', () => {
-       expect(screen.getByTitle('Logo')).toHaveAttribute('src', '../../logo.svg');
-   });
 });
