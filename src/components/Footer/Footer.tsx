@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import logoReact from '../../logo.svg';
+import s from './Footer.module.css';
 
 const Footer: FC = () => {
     return (
@@ -7,7 +8,7 @@ const Footer: FC = () => {
           <span>
               Powered by React
           </span>
-          <img title='Logo' src={logoReact} alt='JS' />
+          <img className={s.img} title='Logo' src={logoReact} alt='JS' />
       </footer>
     );
 }
